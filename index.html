@@ -40,7 +40,25 @@ p{font-size:16px;line-height:1.7;}
   border-bottom:1px solid var(--border);
 }
 
-.logo{font-weight:700;font-size:15px;}
+/* ✅ FIXED LOGO STYLES */
+.logo-stack{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.logo-top img{
+  height:26px;
+  width:auto;
+  display:block;
+}
+
+.logo-bottom img{
+  height:20px;
+  width:auto;
+  margin-top:4px;
+  display:block;
+}
 
 .nav-links a{
   margin-left:20px;
@@ -124,6 +142,11 @@ p{font-size:16px;line-height:1.7;}
   border-radius:6px;
 }
 
+.card-header img{
+  height:24px;
+  width:auto;
+}
+
 .card-header h2{
   font-size:24px;
   font-weight:600;
@@ -170,7 +193,7 @@ p{font-size:16px;line-height:1.7;}
   text-decoration:none;
 }
 
-/* TERMS (FIXED ALIGNMENT) */
+/* TERMS */
 .terms{
   display:flex;
   align-items:center;
@@ -269,7 +292,7 @@ p{font-size:16px;line-height:1.7;}
   border:1px solid #d1d5db;
   border-radius:999px;
   overflow:hidden;
-  background:#f3faf5; /* soft green bg */
+  background:#f3faf5;
 }
 
 .toggle-btn{
@@ -283,13 +306,11 @@ p{font-size:16px;line-height:1.7;}
   transition:all .2s ease;
 }
 
-/* ACTIVE */
 .toggle-btn.active{
-  background:#16a34a; /* green */
+  background:#16a34a;
   color:#fff;
 }
 
-/* HOVER */
 .toggle-btn:hover:not(.active){
   background:#dcfce7;
   color:#166534;
@@ -344,13 +365,14 @@ p{font-size:16px;line-height:1.7;}
 
 <div class="nav">
   <div class="logo-stack">
-  <div class="logo-top">
-    <img src="manageengine-logo.svg" alt="ManageEngine">
+    <div class="logo-top">
+      <img src="manageengine-logo.svg" alt="ManageEngine">
+    </div>
+    <div class="logo-bottom">
+      <img src="endpointcentral (1).svg" alt="Endpoint Central">
+    </div>
   </div>
-  <div class="logo-bottom">
-    <img src="endpointcentral (1).svg" alt="Endpoint Central">
-  </div>
-</div>
+
   <div class="nav-links">
     <a href="#">Features</a>
     <a href="#">Solutions</a>
